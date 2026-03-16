@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kalyanuuuu</title>
+<style>
+body{
+margin:0;
+height:100vh;
+background: linear-gradient(to bottom, #ffb6c1, #ffe4e1);
+display:flex;
+justify-content:center;
+align-items:center;
+overflow-x:hidden;
+}
+.page
+{
+display:none;
+height:100vh;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+color:red;
+}
+.show{
+display: flex;
+}
+h1{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color:#b30059;
+}
+button{
+padding:14px 28px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:#ff4d79;
+color:white;
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);}
+#message{
+font-size: 22px;
+color:#b30059;
+width:80%;
+max-width:500px;
+line-height:1.6;
+}
+.heart{
+position: fixed;
+bottom: 0;
+font-size: 24px;
+animation: floatUp 5s linear forwards;
+z-index: 9999;
+}
+#typingbox{
+    font-family: "Dancing Script",cursive;
+    font-size:24px;
+    color:#b30059;
+    width:80%;
+    max-width :500%;
+    margin-top:20px;
+    line-height:1.8;
+}
+#heartClick{
+    font-size:55px;
+    margin-top:40px;
+    cursor:pointer;
+    animation:pulse 1.5s infinite;
+    color:red;
+    z-index:10;
+    position:relative
+}
+@keyframes floatUp{
+from{
+transform: translateY(0);
+opacity:1;
+}
+to{
+transform: translateY(-120vh);
+opacity:0;
+}
+}
+</style>
+</head>
+<body>
+<div id="page1" class="page show">   
+<h1>THIS IS FOR YOU KANNA...❤️</h1>
+<button onclick="goNext()">Open  😘</button>
+</div>
+<div id="page2" class="page" style="display: none;">
+<h1>Oye Bangaram...</h1>
+<div id="typingBox"></div>
+<div id="message">
+    <p class="line">Niku okati cheppali...</p>
+    <p class="line">Na Maatuna Baadhaku Maatala Cure-U Vaa...</p>
+    <p class="line">Kannu Kanna Kalalaku Oxygen-U Store-U Vaa...</p>
+    <p class="line">Sometimes I feel like I speak through song lyrics,because words are not enough for what I feel for you...</p>
+    <p class="line">But this...this is real.This is exactly how you make me feel...</p>
+</div>
+<div id="heartClick"
+onclick="goPage3()">❤</div>
+</div>
+<div id="page3" class="page">
+    <h1>I Wanna Say You Onething</h1>
+    <div onclick="goPage4()"
+    style="font-size:50px; cursor:pointer;">❤
+    </div>
+</div>
+<div id="page4" class="page" style="display:none;">
+    <h1>Hey Abbaiii...</h1>
+    <div id="typing box"></div>
+    <div id="message">
+    <p class="line">Entoii...<br>Em maya chesavoii..nenu ninnu intha Preminchesthunna...</p>
+    <p class="line">Naku kuda ardam kavatledhu nenu ela inthala ninnu love chesthunnanu ani...</p>
+    <p class="line">Ninnu Chusinapudalla naku entha anamdamga untundo telsa like..peacock varsham vasthe dance vestadi kadha same alne ninnu chesthe manasulo dance chesestha chala happy ayipotha...</p>
+    <p class="line">Ninnu chustene okalanti blush vastadi...cheppalenoiii chala manchiga anipistadi...</p>
+    <p class="line">Epudoo..elano telidu but manasulo nundi duram cheyalenantha daggara ayipoyavu...prema ante ila untadi ani nerpinchavu...</p>
+    <button onclick="goPage5()">Continue...</button>
+    </div>
+</div>
+    <div id="page5" class="page" style="display:none;">
+        <div id="typing box"></div>
+    <div id="message">
+    <p class="line">Nee peroka japamainadi...<br> Nee premoka tapamainadi <br> Nee dyaname varamainadi ennalaina...</p>
+    <p class="line">Actually...Ninne kadhoii ni peru tho kuda premalo padipoyanu Bangaram...</p>
+    <p class="line">Ekkadaina..epudaina KALYAN ani ni peru vinipisthene heart lo edo ayipodi ventane blush ayipodi..KALYAN okkate kadhu RAJA ani ekkada vinna same ade feel...</p>
+    <p class="line">Chudantiniki chala innocent ga untav..cute untav..mudhostav..saradaga untavv..kani nilo inka chala specail undi..</p>
+    <p class="line">And..Em Chesavo kani manasantha nuvve ayipoyavv..</p>
+    <p class="line">If ni wife ni ayye chance isthe..</p>
+    <p class="line"> I promise..I will take best care of youuu...</p>
+    <div onclick="goPage6()">I LOVE YOU,JAAN...❤</div>
+    </div>
+</div>
+<div id="page6" class="page" style="display:none;">
+<h1>You are the reason for my Glow...</h1>
+<div id="typing box"></div>
+<div id="message">
+<p class="line">Etu Vaipu Chusthunna Nee Rupu Kanipinchi Chirunavvu Navve Ela...</p>
+<p class="line">Eduraithe Ralenu Etu Vaipu Polenu Nee Pakkakochedela...</p>
+<p class="line">Emoiii...Malli ii pilla evo lyrics rasesindi anukuntunnava...</p>
+<p class="line">Actually this is how I feel for you..</p>
+<p class="line">Sometimes Evarini Chusina Ninnu Chusinatle amipistadi...</p>
+<p class="line">Nenu entha kopam lo unna..entha hurting lo unna...entha pain lo unna ninnu chuste adantha pothundi..</p>
+<p class="line">Nitho Unna..nitho matladina..ninnu chusina ventane calm ayipotha...</p>
+<div onclick="goPage7()">THIS IS THE WAY MY EYES QUIETLY FALL IN LOVE WITH YOU...❤</div>
+</div>
+</div>
+<div id="page7" class="page" style="display:none;">
+
+    <img src="we.png" onclick="goPage8()" style="width:500px;height:2500px;border-radius:20px;background:dimgrey;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,0.3);">
+</div>
+<div id="page8" class="page" style="display:none;">
+    <div id="typing box"></div>
+<div id="message">
+    <p class="line">*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*</p>
+    <p class="line">This is how I feel every time I look at you...a quiet excitement in my heart...</p>
+    <p class="line">You only know a small part of what I truly feel for you...</p>
+    <p class="line">There's still so much my hearts wants to tell you...❤</p>
+    <p class="line">*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*</p>
+    <button onclick="goPage9()">Continue...</button>
+    </div>
+</div>
+<div id="page9" class="page" style="display:none;">
+    <div id="typing box"></div>
+<div id="message">
+    <p class="line">If one day you ask me why I love you...I may not have an answer...</p>
+    <p class="line">Not because my love is small,but because some feelings are too deep to be explained with words...</p>
+    <p class="line">All I know is this-Somewhere along the way,my heart quietly chose you...</p>
+    <p class="line">Even when I am sorrounded by people,if you are not there,a strange emptiness fills my world...</p>
+    <p class="line">And everyday,when you leave for home,if you look into my eyes carefully..you will see the pain I try so hard to hide...</p>
+    <button onclick="goPage10()">Continue...</button>
+    </div>
+</div>
+<div id="page10" class="page" style="display:none;">
+    <div id="typing box"></div>
+<div id="message">
+    <p class="line">You spend the whole day in college yet the moment you walk away,my heart begins to miss you..</p>
+    <p class="line">I don't know how it happened...but somehow you became someone i like more than words can describe</p>
+    <p class="line">I want a life with you...I want every little moment of my life to have my life to have you beside me...</p>
+    <p class="line">...................................................................</p>
+    <button onclick="goPage11()">Continue...</button>
+    </div>
+</div>
+<div id="page11" class="page" style="display:none;">
+    <div id="typing box"></div>
+<div id="message">
+    <p class="line">Even without loving me back,you still care for me so much...</p>
+    <p class="line">Sometimes I wonder...If this is how beautifully you care now,how much more love would there be if you truly loved me?...</p>
+    <p class="line">May be fate is a little unfair to me..may be I am just unlucky to not receive your love...</p>
+    <p class="line">But still...having you in my life,having someone like you who cares for me this much...already feels like a blessing...</p>
+    <p class="line">And may be asking for more than this would simply become greed...</p>
+    </div>
+    <button onclick="goPage12()">Continue...</button>
+    </div>
+    <div id="page12" class="page" style="display:none;">
+        <h1>THANK YOU FOR...EVERTHING</h1>
+        <div id="typing box"></div>
+    <div id="message">
+        <p class="line">Thank you nanna..for being with me..</p>
+        <p class="line">Even when I was low,you never left me alone...</p>
+        <p class="line">Thank you for understanding my mood swings,comforting me in my pain, and praying for me..</p>
+        <p class="line"> I feel safe and happy with you..I trust you alot...❤</p>
+        </div>
+        <div onclick="goPage13()" style="color:#b30059;font-size:28px;cursor:pointer;">And..This is for Youuu...❤</div>  
+</div>
+<div id="page13" class="page" style="display:none;color:#b30059;text-align:center;flex-direction:column;">
+    <div onclick="openLetter()"
+    style="width:200px;height:120px;background:#fff;border:2px solid #ff4d79;position:relative;cursor:pointer;border-radius:10px;display:flex;justify-content:center;align-items:center;font-weight:bold;color:#ff4d79;">Tap to Open...</div>
+    <div id="letter" style="display:none;margin-top:30px;background:#fffaf0;padding:30px;width:80%;max-width:500px;border-radius:15px;box-shadow:0 10px 30px rgba (0,0,0,0.2);text-align:center;line-height:1.6">
+    <h2>To my Kannalu...</h2>
+    <p>
+        You are the first hope that wakes in my heart every
+        morning...<br><br>
+        You are the unforgettable thought that stays with me even
+        in my sleep....<br><br>
+        Like a butterfly circling its favorite flower, my world
+        always turns around you...<br><br>
+        You are the one person before whom I can open my heart
+        without fear...<br><br>
+        You are the only star my eyes search for...<br>
+        <br>
+        And if I am a sunflower, you are the sun I forever look up
+        to...<br><br>
+        And at the end of every breath and every feeling...<br>
+        I Trust You alot..I will be with you forever...<br>
+        I love you so much, kanna... ❤️<br><br><br><br>
+        </p>
+
+    </div>
+    <button onclick="goPage14()" style="color:#b30059;font-size:28px;cursor:pointer;">continue...</button> 
+
+</div>
+<div id="page14" class="page" style="display:none;">
+    <h1 style="font-size:50px;">I LOVE YOU...❤️</h1>
+    <div id="typing box"></div>
+<div id="message">
+    <p class="line" style="font-size:24px;">I will always be with you,and I am forever yours...<br>Take care dear...and I am always here to take good care of you too..<br><br>No matter what happens,You will always have me...❤️</p>
+<h1 style="font-size:25px;">Like a Wave that always returns to the shore,no matter how many times it is pushed away <br>My Heart always choose you...❤️</h1></div>
+</div>
+<script>
+function goNext(){
+document.getElementById("page1").style.display="none";
+document.getElementById("page2").style.display="flex";
+}
+function goPage3(){
+document.getElementById("page2").style.display="none";
+document.getElementById("page3").style.display="flex";
+}
+function goPage4(){
+document.getElementById("page3").style.display="none";
+document.getElementById("page4").style.display="flex";
+}
+function goPage5(){
+document.getElementById("page4").style.display="none";
+document.getElementById("page5").style.display="flex";
+}
+function goPage6(){
+document.getElementById("page5").style.display="none";
+document.getElementById("page6").style.display="flex";
+}
+function goPage7(){
+document.getElementById("page6").style.display="none";
+document.getElementById("page7").style.display="flex";
+}
+function goPage8(){
+document.getElementById("page7").style.display="none";
+document.getElementById("page8").style.display="flex";
+}
+function goPage9(){
+document.getElementById("page8").style.display="none";
+document.getElementById("page9").style.display="flex";
+}
+function goPage10(){
+document.getElementById("page9").style.display="none";
+document.getElementById("page10").style.display="flex";
+}
+function goPage11(){
+document.getElementById("page10").style.display="none";
+document.getElementById("page11").style.display="flex";
+}
+function goPage12(){
+document.getElementById("page11").style.display="none";
+document.getElementById("page12").style.display="flex";
+}
+function openLetter(){
+    document.getElementById("letter").style.display="block";
+}
+function goPage13(){
+document.getElementById("page12").style.display="none";
+document.getElementById("page13").style.display="flex";
+}
+function goPage14(){
+document.getElementById("page13").style.display="none";
+document.getElementById("page14").style.display="flex";
+}
+function createHeart(){
+const heart = document.createElement("div");
+heart.className = "heart";
+heart.innerHTML = "❤";
+heart.style.left = Math.random() * 100 + "vw";
+heart.style.color = ["#ff3366","#ff6699","#ff99cc"]
+[Math.floor(Math.random()*3)];
+document.body.appendChild(heart);
+setTimeout(()=>{
+heart.remove();
+},5000);
+}
+setInterval(createHeart, 300);
+
+alert("I LOVE YOU SO MUCH...❤")
+</script>
+</body>
+</html>
